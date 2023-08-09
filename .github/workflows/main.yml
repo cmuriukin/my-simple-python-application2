@@ -17,5 +17,12 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: cmuriukin/class16-create-and-publish-docker-image
+      - name: Build and push
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          push: true
+          tags: cmuriukin/class16-create-and-publish-docker-image:latest
+      
       
         
