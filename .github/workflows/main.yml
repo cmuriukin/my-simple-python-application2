@@ -1,0 +1,9 @@
+name: Publish Docker Image
+on: push
+jobs:
+  push_docker_image_to_registry:
+    name: Push Docker image to registry
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out Repo
+        uses: actions/checkout@v3
