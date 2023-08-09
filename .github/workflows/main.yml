@@ -22,7 +22,8 @@ jobs:
         with:
           context: .
           push: true
-          tags: cmuriukin/class16-create-and-publish-docker-image:latest
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.output.labels }}
       
       
         
