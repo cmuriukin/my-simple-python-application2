@@ -4,7 +4,8 @@ on:
   push:
     branches: [ "dev" ]
 jobs:
-  name: push docker image to registry
-  runs-on: ubuntu-latest
-  steps:
+  build_and_push_docker_to_rep:
+    name: push docker image to registry
+    runs-on: ubuntu-latest
+    steps:
     - name: checkout repo
