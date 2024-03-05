@@ -1,0 +1,10 @@
+name: Build and publish dockee image
+
+on:
+  push:
+    branches: [ "dev" ]
+jobs:
+  name: push docker image to registry
+  runs-on: ubuntu-latest
+  steps:
+    - name: checkout repo
