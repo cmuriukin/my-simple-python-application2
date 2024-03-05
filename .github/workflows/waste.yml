@@ -1,8 +1,0 @@
-name: pass time
-on: push
-jobs:
-  my-job:
-    runs on: self-hosted
-    steps:
-      - name: waste time
-        run: sleep 30
