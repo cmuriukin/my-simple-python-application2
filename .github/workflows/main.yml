@@ -1,7 +1,7 @@
 name: Build and publish docker image
 on:
   push:
-    branches: [ "dev" ]
+    branches: [ "main" ]
 jobs:
   build_and_push_docker_to_rep:
     name: push docker image to registry
