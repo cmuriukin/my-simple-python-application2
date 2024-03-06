@@ -1,0 +1,8 @@
+name: psss time
+on: push
+jobs:
+  my_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: time script
+        run: sleep 30
